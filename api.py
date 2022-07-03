@@ -31,8 +31,8 @@ def find_track_tags(d, n):
     track_tags_object = track_object.get_top_tags()
     
     for t in track_tags_object:
-      print(t)
-      break;
+      tag_name = t.item.get_name()
+      tags.append(tag_name)
 
     track_tags.append(tags)
     i += 1
