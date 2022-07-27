@@ -116,6 +116,7 @@ while i != len(ARTISTS_AND_TRACKS):
   """
   i += 1
 
+'''
 lastfm_dataframe = pd.DataFrame.from_records(results, columns=['name', 'tags'])
 
 engine = db.create_engine('sqlite:///lastfm_database.db')
@@ -123,7 +124,7 @@ lastfm_dataframe.to_sql('lastfm_table', con=engine, if_exists='replace', index=F
 
 query_result = engine.execute("SELECT * FROM lastfm_table;").fetchall()
 print(pd.DataFrame(query_result))
-
+'''
 
 
 
